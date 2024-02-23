@@ -2,9 +2,9 @@ const express = require('express')
 const anything = require("./second")
 
 const app = express();
-app.get('/',function(req,res){
-    res.send("hello there")
-})
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
+app.use('/api/users',require('./routes/api/users'))
 app.listen(3000,()=>{
     console.log("Server staarted on : 3000");
 })

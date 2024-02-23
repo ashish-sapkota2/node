@@ -10,13 +10,14 @@ const user =[
     email: 'harish@gmail.com'
 },
 {
-    id : 6,
+    id : 3,
     name: 'sita',
     email: 'sita@gmail.com'
 },
 {
-    id : 2,
+    id : 4,
     name: 'shyam',
     email: 'sh123@gmail.com'
 },
 ]
+module.exports = user;
