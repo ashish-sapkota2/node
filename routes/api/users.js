@@ -33,4 +33,38 @@ router.post('/',(req,res)=>{
     users.push(newUser)
     res.json(users)
 })
+
+//update user
+router.put('/:id',(req,res)=>{
+    const found = users.some(user=> user.id === parseInt(req.params.id))
+
+    if(found){
+        const updateuser = req.body;
+        users.forEach(user=>{
+            if(user.id===parseInt(req.params.id)){
+                user.name = updateuser.name ? updateuser.name: user.name
+                user.email = updateuser.email ? updateuser.email : user.email 
+                res.json({msg: 'user updated', user})
+            }
+        })
+    }
+})
+
+//delete user
+
+router.delete('/:id',(req,res)=>{
+    const found = users.some(user => user.id=== parseInt(req.params.id));
+        if(found){
+            users= users.filter(user=> user.id != parseInt(req.params.id))
+                res.json({
+                    msg: 'user deleted',
+                    users
+                });
+            }else{
+                res.sendStatus(400);
+            }
+        }
+    
+)
+
 module.exports = router;
