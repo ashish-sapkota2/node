@@ -48,6 +48,34 @@ app.get('/movie/:id',(req,res)=>{
         res.status(404).send('Movie not found')
 })
 
+//remove movie
+
+app.delete('/movie/:id',(req,res)=>{
+    const id = req.params.id;
+
+    movies =movies.filter((movie)=>{
+        if(movie.id!== id){
+            return true;
+        }
+        return false;
+    });
+    res.status(400).send("Movie deleted successfully!");
+});
+// app.delete('/movie/:id',(req,res)=>{
+//     const found = movies.some(movie => movie.id=== parseInt(req.params.id));
+//         if(found){
+//             movies= movies.filter(movie=> movie.id != parseInt(req.params.id))
+//                 res.json({
+//                     msg: 'movie deleted',
+//                     movies
+//                 });
+//             }else{
+//                 res.sendStatus(400);
+//             }
+//         }
+    
+// )
+
 // set the server to listem at port
 
 app.listen(port,()=> console.log(`server listening at port ${port}`))
