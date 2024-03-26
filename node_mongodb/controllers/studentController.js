@@ -24,7 +24,7 @@ function insertRecord(req,res){
     student.mobile = req.bosy.mobile;
     student.city = req.body.city;
     student.save((err,doc)=>{
-        if(!eerr){
+        if(!err){
             res.redirect('student/list')
         }else{
             console.log('error during insert : '+err)
@@ -33,7 +33,7 @@ function insertRecord(req,res){
 }
 
 function updateRecord(req,res){
-    student.findOneAndUpdate({_id: req.body._id}, req.body , {new: true},(err,doc)=>{
+    Student.findOneAndUpdate({_id: req.body._id}, req.body , {new: true},(err,doc)=>{
         if(!err){
             res.redirect('student/list')
         }else{
@@ -43,16 +43,16 @@ function updateRecord(req,res){
 }
 
 router.get('/list',(req,res)=>{
-    Student.find((err,docs)=>{
+    Student.find().then((err,docs)=>{
         if(!err){
-            res.render('student/list',{
+            res.render('../views/student/list',{
                 list :docs
-            })
+            });
         }else{
             console.log('error while retriving: '+err)
         }
     })
-})
+});
 
 router.get('/:id',(req,res)=>{
     Student.findById(req.params.id,(err,doc)=>{

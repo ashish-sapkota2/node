@@ -5,14 +5,14 @@ const mongoURI = "mongodb://localhost:27017/studentdb"
 const connectToMongo = async()=>{
     try{
         mongoose.set('strictQuery', false)
-        mongoose.connect(mongoURI)
+       await mongoose.connect(mongoURI)
         console.log('Mongo Connceted')
     }catch(error){
         console.log(error)
         
     }
 }
-module.export =connectToMongo;
+module.exports =connectToMongo;
 
 // mongoose.connect('mongodb://localhost:27017/studentdb', {
 //     useNewUrlparser :true
