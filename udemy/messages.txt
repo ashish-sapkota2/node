@@ -1,0 +1,143 @@
+9801345489, 9845208181
+
+
+Fiber Down 
+We know the severity of your connectivity. We have informed our team about troubleshooting your connectivity. We will be providing periodic updates on this. Thank you for your patience and support.
+
+We know the severity of your connectivity but, we regret to inform you that the last mile link is showing down. Our team has been informed & verifying problematic area. We will be providing periodic update on this. Thank you for your patience & Support.
+
+---------------------------------------------------------------------------------------------------------------------------
+Restore Fiber 
+Thank you for your patience and support. We would like to inform you that connectivity has been restored and should be operational at the moment. Please kindly revert to us if any issues or queries persist.
+
+pri. link restore
+Thank you for your patience & Support. we would like to inform you that your Primary link has been restored and should be operational at the moment. Please kindly revert us back if any issues/queries persist.
+
+Sec.link restore
+Thank you for your patience & Support. we would like to inform you that your Secondary link has been restored and should be operational at the moment. Please kindly revert us back if any issues/queries persist.
+----------------------------------------------------------------------------------------------------------------------------
+Ds DOWN
+We know severity for your connectivity but, we regret to inform you that we have found issues in our Distribution Switch. We have informed our team for further verification & troubleshoot. We will be providing periodic update on this. 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Link verification
+We would like to inform you the link is restored and operational as per the telephonic conversation intended to verify the link with Mr/Mrs/Miss. x on x. For now, we are closing tt. 
+Thank you for your patience & support. Please do revert back to us if any issues persist.
+
+----------------------------------------------------------------------------------------------------------------------------
+We have informed our fiber team to restore the link asap. We will be providing periodic updates. 
+Thanks for the patience and support. 
+----------------------------------------------------------------------------------------------------------------------------
+Pri- Fiber down 
+We know severity for your connectivity, currently your primary fiber connectivity is observed down but your link is operational via secondary backup fiber link. We have informed our team regarding primary fiber link down and our team will verify further and resolve the issue as earliest as possible. We will update you work progress accordingly. Thank you 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Sec- Fiber Down 
+
+We know severity for your connectivity, currently your Secondary fiber connectivity is observed down but your link is operational via Primary fiber link. We have informed our team regarding Secondary backup fiber link down and our team will verify further and resolve the issue as earliest as possible. We will update you work progress accordingly. Thank you 
+-----------------------------------------------------------------------------------------------------------------------------
+
+Monitoring down Single link 
+We would like to inform you that your connectivity is showing down in our 
+monitoring system. Could you please verify the status of power at your premises so we could proceed 
+accordingly?  
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Monitoring down (Primary and secondary ) 
+
+We would like to inform you that your both primary and secondary connectivity is showing down in our 
+monitoring system. Could you please verify the status of power at your premises so we could proceed 
+accordingly?  
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Monitoring down primary 
+
+We would like to inform you that your both primary  connectivity is showing down in our 
+monitoring system. Could you please verify the status of power at your premises so we could proceed 
+accordingly?
+---------------------------------------------------------------------------------------------------------------------------------
+Monitoring down Secondary 
+
+We would like to inform you that your both  secondary connectivity is showing down in our 
+monitoring system. Could you please verify the status of power at your premises so we could proceed 
+accordingly?
+----------------------------------------------------------------------------------------------------------------------------------
+
+Restore nagios down 
+Thank you for your patience & support. We would like to inform you that your connectivity is fine at the 
+moment. We would like to request you to verify from your end too. Please manage to verify & reconfigure 
+device at your end if required. 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Restore Fiber Down 
+Thank you for your patience & Support. Your connectivity has been restored. Could you please verify from your 
+end and revert us back, please?
+-----------------------------------------------------------------------------------------------------------------------------------
+Ap down inform 
+
+We know severity for your connectivity but, we regret to inform you that we have found issues in our Access Point connected to your SM. We have informed our team for further verification & troubleshoot. We will be providing periodic update on this. Thank you for your patience & support.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Monitor 
+Thank you for patience and support. We have kept your connectivity in our monitoring system to identify the 
+disconnection issue. We will be monitoring your connectivity for 12 hours.
+-------------------------------------------------------------------------------------------------------------------------------------
+Thank you for your patience and support. As per conversation with client link is working fine at the moment. 
+Please do revert back to us if any issues persists.
+-------------------------------------------------------------------------------------------------------------------------------------
+Thank you for patience and support. Our team has shared ETR of 1 to 2 hours for now. We will update you on this.
+-------------------------------------------------------------------------------------------------------------------------------------
+Link is restored and operational verified with Mr/Mrs/Miss. XXXXX Sir on 980XXXXXXXX. For now, we are closing tt. Thank you for your patience & support.
+-------------------------------------------------------------------------------------------------------------------------------------
+Dear sir, thank you for your patience and support. we have informed our team to troubleshoot the connectivity as soon as possible. we will provide you periodic updates on this.
+-------------------------------------------------------------------------------------------------------------------------------------
+Thank you for your patience & Support. Your connectivity has been restored and is operational. 
+Please do revert back to us if any issues persists.
+-------------------------------------------------------------------------------------------------------------------------------------
+As per local team, available fiber team are currently assigned at another site where pole shifting is being carried out. They Will look into your issue afterwards.Immense apologies for being delay in service. We will try our best to do needful on urgent basis.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Link is restored and operational verified with @ (contact no). For now, we are closing tt. Thank you for your patience & support.
+-------------------------------------------------------------------------------------------------------------------------------------
+35wl#Login465
+35wl%Login465
+nepal1234$# worldlink.com.np password
+w1ink23$# tacas password
+-------------------------------------------------------------------------------------------------------------------------------------
+
+10.0.0.0   10.255.255.255  255.0.0.0 class A 
+
+172.16.0.0 172.31.255.255   255.240.0.0  Class b 
+
+192.168.0.0 192.168.255.255   255.255.0.0  Class C
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+1032624 / 2
+414C434CB39386F8  3*1024 int  12*1024 local 208
+
+set interfaces ae4 unit 208 family inet address 124.41.208.1/24 arp 124.41.208.21 mac d4:76:a0:5b:8e:8b
+
+20 - ftte-pppoe 
+60 - L3(Internet)
+70 - L2 connection (intranet)
+
+9801903440 free wifi corporate
+
+
+
+
+
+set interfaces xe-2/2/0 unit 7 family inet address 124.41.223.1/24 arp 124.41.223.18 mac dc:2c:6e:6e:dc:d0
+
+
+delete interfaces xe-2/2/0 unit 7 family inet address 124.41.223.1/24 arp 124.41.223.18 mac ac:a4:6e:ee:cc:c5
+
+
