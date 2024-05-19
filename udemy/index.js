@@ -21,6 +21,10 @@ const url =require('url');
 
 // *****************Server************
 
+
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
+const dataObj = JSON.parse(data);
+
 const server = http.createServer((req, res)=>{
     const pathname = req.url;
 
@@ -30,7 +34,9 @@ const server = http.createServer((req, res)=>{
     }else if(pathname === '/product'){
         res.end('This is the product');
     }else if(pathname === '/api'){
-        res.end('API');
+           res.writeHead(200, {'Content-type' : 'application/json'});
+            res.end(data);
+
     }else{
         res.end('Page could not be found');
     }
